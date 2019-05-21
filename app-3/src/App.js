@@ -17,9 +17,9 @@ class App extends Component {
   }
   
   render() {
-    let filteredList = this.state.arr.filter((val, i) => {
+    let filteredList = this.state.arr.filter(val => {
       return val.includes(this.state.userInput)
-    }).map((val, i) => <h3 key={i}>{val}</h3>)
+    }).map((val, i) => <h2 key={i}>{val}</h2>)
     console.log(filteredList)
     return (
       <div className="App">

@@ -12,7 +12,9 @@ class App extends Component {
     let list = this.state.arr.map((val, i) => <h3 key={i}>{val}</h3>)
     return (
       <div className="App">
-        {list}
+        <h2>
+          {list}
+        </h2>
       </div>
     );
   }
